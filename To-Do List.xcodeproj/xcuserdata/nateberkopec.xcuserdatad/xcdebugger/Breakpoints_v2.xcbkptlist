@@ -17,6 +17,36 @@
             endingLineNumber = "11"
             landmarkName = "FirstViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "To_Do_List.FirstViewController.__deallocating_deinit"
+                  moduleName = "To-Do List"
+                  urlString = "file:///Users/nateberkopec/Documents/code/To-Do%20List/To-Do%20List/FirstViewController.swift"
+                  timestampString = "437270549.353985"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc To_Do_List.FirstViewController.__ivar_destroyer"
+                  moduleName = "To-Do List"
+                  urlString = "file:///Users/nateberkopec/Documents/code/To-Do%20List/To-Do%20List/FirstViewController.swift"
+                  timestampString = "437270549.358365"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
