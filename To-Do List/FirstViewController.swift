@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Realm
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -29,20 +30,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if(editingStyle == UITableViewCellEditingStyle.Delete) {
-            taskMgr.tasks.removeAtIndex(indexPath.row)
+            taskMgr.removeTaskAt(UInt(indexPath.row))
             tblTasks.reloadData()
         }
     }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return taskMgr.tasks.count
+        return Int(taskMgr.tasks.count)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "test")
-        cell.textLabel.text = taskMgr.tasks[indexPath.row].name
-        cell.detailTextLabel!.text = taskMgr.tasks[indexPath.row].desc
+        let task: Task = taskMgr.tasks.objectAtIndex(UInt(indexPath.row)) as Task
+        cell.textLabel.text = task.name
+        cell.detailTextLabel!.text = task.desc
         return cell
     }
 

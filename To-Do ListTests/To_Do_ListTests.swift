@@ -8,12 +8,17 @@
 
 import UIKit
 import XCTest
+import Realm
 
 class To_Do_ListTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let realm = RLMRealm.defaultRealm()
+        realm.beginWriteTransaction()
+        realm.deleteAllObjects()
+        realm.commitWriteTransaction()
     }
     
     override func tearDown() {
@@ -23,14 +28,18 @@ class To_Do_ListTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        assert(true, "Pass")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testHasNoTasks() {
+        assert(taskMgr.tasks.count == 0, "taskMgr inits with no tasks")
+    }
+    
+    func testAddTask() {
+        taskMgr.addTask("Test task name", desc: "Test task desc")
+        
+        assert(taskMgr.tasks.count == 1, "taskMgr has a task")
+        assert(taskMgr.tasks.firstObject().name == "Test task name", "name set")
     }
     
 }

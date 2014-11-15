@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12355361A17DDE8007B0E05 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12355351A17DDE8007B0E05 /* RLMSupport.swift */; };
+		B12355381A17DE14007B0E05 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12355371A17DE14007B0E05 /* Realm.framework */; };
+		B123553A1A17DE56007B0E05 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B12355391A17DE56007B0E05 /* libc++.dylib */; };
+		B123553B1A17F487007B0E05 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ADA8951A101CA300818426 /* TaskManager.swift */; };
+		B123553C1A17F493007B0E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ADA8711A101C4500818426 /* AppDelegate.swift */; };
+		B123553D1A17F4A2007B0E05 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12355351A17DDE8007B0E05 /* RLMSupport.swift */; };
+		B123553E1A17F4AA007B0E05 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12355371A17DE14007B0E05 /* Realm.framework */; };
 		B1ADA8721A101C4500818426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ADA8711A101C4500818426 /* AppDelegate.swift */; };
 		B1ADA8741A101C4500818426 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ADA8731A101C4500818426 /* FirstViewController.swift */; };
 		B1ADA8761A101C4500818426 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ADA8751A101C4500818426 /* SecondViewController.swift */; };
@@ -28,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B12355351A17DDE8007B0E05 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		B12355371A17DE14007B0E05 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		B12355391A17DE56007B0E05 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		B1ADA86C1A101C4500818426 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ADA8701A101C4500818426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1ADA8711A101C4500818426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B123553A1A17DE56007B0E05 /* libc++.dylib in Frameworks */,
+				B12355381A17DE14007B0E05 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B123553E1A17F4AA007B0E05 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 		B1ADA8631A101C4500818426 = {
 			isa = PBXGroup;
 			children = (
+				B12355391A17DE56007B0E05 /* libc++.dylib */,
 				B1ADA86E1A101C4500818426 /* To-Do List */,
 				B1ADA8861A101C4500818426 /* To-Do ListTests */,
 				B1ADA86D1A101C4500818426 /* Products */,
@@ -89,6 +103,8 @@
 				B1ADA87C1A101C4500818426 /* LaunchScreen.xib */,
 				B1ADA86F1A101C4500818426 /* Supporting Files */,
 				B1ADA8951A101CA300818426 /* TaskManager.swift */,
+				B12355351A17DDE8007B0E05 /* RLMSupport.swift */,
+				B12355371A17DE14007B0E05 /* Realm.framework */,
 			);
 			path = "To-Do List";
 			sourceTree = "<group>";
@@ -222,6 +238,7 @@
 			files = (
 				B1ADA8761A101C4500818426 /* SecondViewController.swift in Sources */,
 				B1ADA8721A101C4500818426 /* AppDelegate.swift in Sources */,
+				B12355361A17DDE8007B0E05 /* RLMSupport.swift in Sources */,
 				B1ADA8961A101CA300818426 /* TaskManager.swift in Sources */,
 				B1ADA8741A101C4500818426 /* FirstViewController.swift in Sources */,
 			);
@@ -231,7 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B123553C1A17F493007B0E05 /* AppDelegate.swift in Sources */,
+				B123553B1A17F487007B0E05 /* TaskManager.swift in Sources */,
 				B1ADA88A1A101C4500818426 /* To_Do_ListTests.swift in Sources */,
+				B123553D1A17F4A2007B0E05 /* RLMSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +366,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/To-Do",
+					List,
+				);
 				INFOPLIST_FILE = "To-Do List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,7 +384,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/To-Do",
+					List,
+				);
 				INFOPLIST_FILE = "To-Do List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -371,6 +406,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/To-Do",
+					List,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -393,6 +430,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/To-Do",
+					List,
 				);
 				INFOPLIST_FILE = "To-Do ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
